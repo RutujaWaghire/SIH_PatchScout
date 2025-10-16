@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+🧠 PatchScout AI Assistant
 
-## Project info
+An AI-driven Centralized Vulnerability Detection and Intelligent Query Interface
+Developed by Team PatchScout for Smart India Hackathon 2025 (Problem ID: SIH25234) under the Smart Automation theme.
 
-**URL**: https://lovable.dev/projects/bc866b8b-1191-41ee-b616-302f45f46d94
+🚀 Overview
 
-## How can I edit this code?
+PatchScout is an AI-powered vulnerability detection and management platform that unifies multiple security tools into one intelligent dashboard.
+It enables automated scanning, risk mapping, and natural language assistance through a Retrieval-Augmented Generation (RAG) chatbot — making security analysis faster, simpler, and smarter.
 
-There are several ways of editing your application.
+🔍 Key Features
 
-**Use Lovable**
+All-in-One Scanner:
+Integrates five top security tools (Nmap, OpenVAS, Nessus, Nikto, Nuclei) for comprehensive coverage.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc866b8b-1191-41ee-b616-302f45f46d94) and start prompting.
+Easy-to-Use Interface:
+Simple web app where users can scan any website for vulnerabilities in one click.
 
-Changes made via Lovable will be committed automatically to this repo.
+AI Chatbot Assistant:
+Uses LangChain + HuggingFace models to explain findings and recommend fixes in plain English.
 
-**Use your preferred IDE**
+Attack Path Visualization:
+Neo4j-based graphs to visualize chained exploits and attack flow.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Smart Reports:
+Generates summarized, prioritized vulnerability reports with actionable remediation guidance.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Threat Intelligence Integration:
+Connects to NVD, ExploitDB, and Rapid7 for real-time vulnerability updates.
 
-Follow these steps:
+⚙️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Frontend: React.js, TypeScript, Tailwind CSS
+Backend: Python, FastAPI
+AI Chatbot: LangChain RAG, HuggingFace Transformers, Neo4j Graphs
+Databases: PostgreSQL, ChromaDB (vector DB), Neo4j
+Scanning Tools: Nmap, OpenVAS, Nessus, Nikto, Nuclei
+Threat Intelligence APIs: NVD, ExploitDB, Rapid7
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🧩 System Architecture
 
-# Step 3: Install the necessary dependencies.
-npm i
+Scan: Perform multi-tool vulnerability scans on targets.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Normalize: Aggregate and normalize vulnerability data.
 
-**Edit a file directly in GitHub**
+Analyze: Correlate findings using AI and threat intelligence sources.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Assist: Use the RAG chatbot for natural-language explanations and fixes.
 
-**Use GitHub Codespaces**
+Output: Visual attack path graphs, reports, and remediation steps.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+💡 Innovation & Uniqueness
 
-## What technologies are used for this project?
+First unified platform combining multiple scanners with AI-driven contextual reasoning.
 
-This project is built with:
+RAG-based chatbot for real-time, human-friendly vulnerability explanations.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Attack path modeling powered by Neo4j for deep risk visualization.
 
-## How can I deploy this project?
+Automated risk normalization for faster triage and response.
 
-Simply open [Lovable](https://lovable.dev/projects/bc866b8b-1191-41ee-b616-302f45f46d94) and click on Share -> Publish.
+🔄 Feasibility
 
-## Can I connect a custom domain to my Lovable project?
+Technically Viable: Built using proven frameworks (FastAPI, React, LangChain).
 
-Yes, you can!
+Market Demand: High need among SOC teams for unified vulnerability management.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Financially Scalable: SaaS-ready design reducing licensing overhead.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Legally Compliant: Adheres to cybersecurity and privacy standards with full audit control.
+
+🧱 Risk Mitigation
+Risk	Mitigation
+Integration complexity	Standardized APIs and unified data schemas
+AI model inaccuracies	Regular retraining with curated threat datasets
+Performance bottlenecks	Auto-scaling with container orchestration
+Data privacy issues	Encryption, RBAC, MFA, and audit logs
+📊 Impact & Benefits
+
+🔹 Reduces manual effort by automating scanning and reporting
+
+🔹 Increases accuracy via AI-driven analysis
+
+🔹 Lowers costs by consolidating multiple tools
+
+🔹 Improves collaboration through chatbot-based guidance
+
+🔹 Accelerates incident response time
+
+📎 Resources
+
+GitHub Repository: https://github.com/RutujaWaghire/SIH_PatchScout
+
+Prototype Demo Video: YouTube Demo
+
+NVD - National Vulnerability Database
+
+ExploitDB
+
+Rapid7 Threat Intelligence
+
+LangChain Documentation
+
+Research on AI-based Attack Graphs
+
+👥 Team PatchScout
+
+Mentors:
+
+Prof. A. P. Bangar – Assistant Professor, Computer Networks
+
+Mr. Dharmesh Vala – Software Engineer, Industry Mentor
